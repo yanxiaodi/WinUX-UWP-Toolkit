@@ -108,7 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xaml\Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Xaml\Converters\InverseBooleanToVisibilityConverter.cs" />
     <Content Include="Properties\Croft.Core.UWP.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Xaml\Behaviors\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

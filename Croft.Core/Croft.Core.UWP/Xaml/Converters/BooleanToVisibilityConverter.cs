@@ -1,0 +1,31 @@
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="BooleanToVisibilityConverter.cs" company="James Croft">
+//   Copyright (c) 2015 James Croft.
+// </copyright>
+// <summary>
+//   Defines the BooleanToVisibilityConverter type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Croft.Core.UWP.Xaml.Converters
+{
+    using System;
+
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Data;
+
+    public class BooleanToVisibilityConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var b = value as bool?;
+            return b == null ? Visibility.Collapsed : (b.Value ? Visibility.Visible : Visibility.Collapsed);
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            var v = value as Visibility?;
+            return v == null ? (object)null : v.Value == Visibility.Visible;
+        }
+    }
+}
