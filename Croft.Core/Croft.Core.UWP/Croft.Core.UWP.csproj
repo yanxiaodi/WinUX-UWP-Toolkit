@@ -109,6 +109,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Xaml\Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Xaml\Converters\DateTimeFormatConverter.cs" />
+    <Compile Include="Xaml\Converters\EmptyStringToVisibilityConverter.cs" />
+    <Compile Include="Xaml\Converters\EnumToVisibilityConverter.cs" />
     <Compile Include="Xaml\Converters\InverseBooleanToVisibilityConverter.cs" />
     <Content Include="Properties\Croft.Core.UWP.rd.xml" />
   </ItemGroup>

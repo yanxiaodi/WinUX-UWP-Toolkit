@@ -16,12 +16,24 @@ namespace Croft.Core.UWP.Xaml.Converters
 
     public class BooleanToVisibilityConverter : IValueConverter
     {
+        /// <summary>
+        /// Converts a bool value to a Visibility value.
+        /// </summary>
+        /// <returns>
+        /// Returns Visibility.Visible if true, else Visibility.Collapsed.
+        /// </returns>
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             var b = value as bool?;
             return b == null ? Visibility.Collapsed : (b.Value ? Visibility.Visible : Visibility.Collapsed);
         }
 
+        /// <summary>
+        /// Converts a Visibility value to a bool value.
+        /// </summary>
+        /// <returns>
+        /// Returns true if Visiblility.Visible, else false.
+        /// </returns>
         public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
             var v = value as Visibility?;
