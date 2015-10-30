@@ -1,14 +1,23 @@
-﻿namespace Croft.Core.UWP.Xaml.Converters
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="MetricHeightFormatConverter.cs" company="James Croft">
+//   Copyright (c) 2015 James Croft.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Croft.Core.UWP.Xaml.Converters
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
+    using Croft.Core.UWP.Enums;
+
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Data;
 
-    using Croft.Core.UWP.Enums;
-
+    /// <summary>
+    /// The metric height format converter.
+    /// </summary>
     public class MetricHeightFormatConverter : DependencyObject, IValueConverter
     {
         public static readonly DependencyProperty TargetUnitOfMeasureProperty =
@@ -18,6 +27,9 @@
                 typeof(MetricHeightFormatConverter),
                 new PropertyMetadata(UnitOfMeasure.Imperial));
 
+        /// <summary>
+        /// Gets or sets the target unit of measure.
+        /// </summary>
         public UnitOfMeasure TargetUnitOfMeasure
         {
             get
@@ -30,6 +42,13 @@
             }
         }
 
+
+        /// <summary>
+        /// Converts a double value to a formatted string representing the value as an imperial or metric height.
+        /// </summary>
+        /// <returns>
+        /// Returns a string in the format {x}m {x}cm for metric or {x}ft {x}in for imperial.
+        /// </returns>
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (value == null)
@@ -54,6 +73,14 @@
                 default:
                     return string.Empty;
             }
+        }
+
+        /// <summary>
+        /// Convert back is not supported by the MetricHeightFormatConverter.
+        /// </summary>
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
         }
 
         private static object CalculateMetricHeight(double metersDouble)
@@ -102,11 +129,6 @@
             var feet = new KeyValuePair<int, double>((int)inches / 12, inches % 12);
 
             return $"{feet.Key}ft {feet.Value}in";
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            throw new NotImplementedException();
         }
     }
 }
