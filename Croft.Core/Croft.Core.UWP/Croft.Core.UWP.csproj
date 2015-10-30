@@ -115,6 +115,7 @@
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Models\StorageFileProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xaml\Converters\BooleanFormatConverter.cs" />
     <Compile Include="Xaml\Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Xaml\Converters\DateTimeFormatConverter.cs" />
     <Compile Include="Xaml\Converters\EmptyStringToVisibilityConverter.cs" />
