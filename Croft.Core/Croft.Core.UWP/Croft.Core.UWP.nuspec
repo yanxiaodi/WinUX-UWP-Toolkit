@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.4</version>
+    <title>Croft.Core.UWP</title>
+    <authors>James Croft</authors>
+    <owners>James Croft</owners>
+    
+    <projectUrl>https://github.com/jamesmcroft/Croft-Core</projectUrl>
+    <iconUrl>http://jamescroft.co.uk/wp-content/uploads/2014/12/icon1.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A collection of core components to use in personal Windows apps.</description>
+    <releaseNotes>Updated to include new features added to GitHub repo.</releaseNotes>
+    <copyright>Copyright (c) 2015 James Croft.</copyright>
+    <tags>UWP Windows10 Core VisualStateTrigger XAML</tags>
+  </metadata>
+</package>
