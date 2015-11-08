@@ -4,9 +4,11 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Extensions
+namespace Croft.Core.Extensions
 {
-    using System;
+    using System.Globalization;
+
+    using Windows.UI;
 
     /// <summary>
     /// The string extensions.
@@ -14,41 +16,27 @@ namespace Croft.Core.UWP.Extensions
     public static class StringExtensions
     {
         /// <summary>
-        /// Provides further checking on a string to see if it is a Date or numeric value, they are considered as empty.
+        /// Converts an ARGB hex value to a AccentColor.
         /// </summary>
-        /// <param name="text">
-        /// The text.
+        /// <param name="argbHexValue">
+        /// The argb hex value.
         /// </param>
         /// <returns>
-        /// The <see cref="bool"/>.
+        /// The <see cref="Color"/>.
         /// </returns>
-        public static bool IsEmpty(this string text)
+        public static Color ToColor(this string argbHexValue)
         {
-            if (string.IsNullOrWhiteSpace(text))
-                return true;
+            var val = argbHexValue.ToUpper();
 
-            if (text == "01/01/0001 00:00:00")
-                return true;
+            var color = new Color
+            {
+                A = byte.Parse(val.Substring(1, 2), NumberStyles.AllowHexSpecifier),
+                R = byte.Parse(val.Substring(3, 2), NumberStyles.AllowHexSpecifier),
+                G = byte.Parse(val.Substring(5, 2), NumberStyles.AllowHexSpecifier),
+                B = byte.Parse(val.Substring(7, 2), NumberStyles.AllowHexSpecifier)
+            };
 
-            if (text == "01/01/0001")
-                return true;
-
-            return text == "0";
-        }
-
-        /// <summary>
-        /// Checks whether the date string is valid.
-        /// </summary>
-        /// <param name="dateString">
-        /// The date string.
-        /// </param>
-        /// <returns>
-        /// The <see cref="bool"/>.
-        /// </returns>
-        public static bool IsValidDate(this string dateString)
-        {
-            DateTime dt;
-            return DateTime.TryParse(dateString, out dt) && dt != DateTime.MinValue && dt.Year != 1601;
+            return color;
         }
     }
 }

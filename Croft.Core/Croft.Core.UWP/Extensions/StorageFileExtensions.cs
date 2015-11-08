@@ -4,17 +4,17 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Extensions
+namespace Croft.Core.Extensions
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
 
-    using Croft.Core.UWP.Models;
-
     using Windows.Storage;
     using Windows.Storage.FileProperties;
+
+    using Croft.Core.Models;
 
     /// <summary>
     /// The storage file extensions.

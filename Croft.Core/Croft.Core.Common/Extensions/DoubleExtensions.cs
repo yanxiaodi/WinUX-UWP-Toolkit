@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Extensions
+namespace Croft.Core.Extensions
 {
     using System;
 
@@ -49,7 +49,7 @@ namespace Croft.Core.UWP.Extensions
                 sizeType = "B";
             }
 
-            return string.Format("{0}{1}", Math.Round(fileSize, 2), sizeType);
+            return $"{Math.Round(fileSize, 2)}{sizeType}";
         }
     }
 }

@@ -7,7 +7,7 @@
     <ProjectGuid>{9EBF54FD-4EBF-4F49-96A6-69279A2D8DDF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Croft.Core.UWP</RootNamespace>
+    <RootNamespace>Croft.Core</RootNamespace>
     <AssemblyName>Croft.Core.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
@@ -108,15 +108,22 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\DeviceType.cs" />
-    <Compile Include="Enums\UnitOfMeasure.cs" />
-    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="Diagnostics\Logger.cs" />
+    <Compile Include="Extensions\AccentColorExtensions.cs" />
+    <Compile Include="Extensions\ColorExtensions.cs" />
     <Compile Include="Extensions\StorageFileExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Helpers\MessageDialogHelper.cs" />
     <Compile Include="Models\StorageFileProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Xaml\Converters\BooleanFormatConverter.cs" />
     <Compile Include="Xaml\Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Xaml\Converters\Colors\BrushToDarkAccentBrushConverter.cs" />
+    <Compile Include="Xaml\Converters\Colors\BrushToDarkAccentColorConverter.cs" />
+    <Compile Include="Xaml\Converters\Colors\BrushToLightAccentBrushConverter.cs" />
+    <Compile Include="Xaml\Converters\Colors\BrushToLightAccentColorConverter.cs" />
+    <Compile Include="Xaml\Converters\Colors\BrushToPrimaryAccentBrushConverter.cs" />
+    <Compile Include="Xaml\Converters\Colors\BrushToPrimaryAccentColorConverter.cs" />
     <Compile Include="Xaml\Converters\DateTimeFormatConverter.cs" />
     <Compile Include="Xaml\Converters\EmptyStringToVisibilityConverter.cs" />
     <Compile Include="Xaml\Converters\EnumToVisibilityConverter.cs" />
@@ -129,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Xaml\Behaviors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Croft.Core.Common\Croft.Core.Common.csproj">
+      <Project>{e92f28cc-fa17-4794-ad4c-d4fcf0b27d16}</Project>
+      <Name>Croft.Core.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

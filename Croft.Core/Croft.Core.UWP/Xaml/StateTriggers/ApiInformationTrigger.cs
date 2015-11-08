@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Xaml.StateTriggers
+namespace Croft.Core.Xaml.StateTriggers
 {
     using System;
 

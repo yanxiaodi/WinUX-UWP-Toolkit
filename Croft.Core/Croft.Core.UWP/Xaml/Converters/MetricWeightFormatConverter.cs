@@ -4,16 +4,16 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Xaml.Converters
+namespace Croft.Core.Xaml.Converters
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    using Croft.Core.UWP.Enums;
-
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Data;
+
+    using Croft.Core.Enums;
 
     /// <summary>
     /// The metric weight format converter.

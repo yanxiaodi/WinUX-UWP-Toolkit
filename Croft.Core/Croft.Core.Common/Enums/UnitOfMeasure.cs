@@ -1,24 +1,18 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="DeviceType.cs" company="James Croft">
+// <copyright file="UnitOfMeasure.cs" company="James Croft">
 //   Copyright (c) 2015 James Croft.
 // </copyright>
-// <summary>
-//   The device type.
-// </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Enums
+namespace Croft.Core.Enums
 {
     /// <summary>
-    /// The device type.
+    /// The unit of measure.
     /// </summary>
-    public enum DeviceType
+    public enum UnitOfMeasure
     {
-        Unknown, 
-        Desktop, 
-        Mobile, 
-        SurfaceHub, 
-        IoT, 
-        Xbox
+        Metric,
+
+        Imperial
     }
 }

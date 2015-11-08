@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Xaml.Converters
+namespace Croft.Core.Xaml.Converters
 {
     using System;
 

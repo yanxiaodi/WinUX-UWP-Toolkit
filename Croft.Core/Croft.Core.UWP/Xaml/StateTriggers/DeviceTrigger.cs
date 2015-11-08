@@ -4,14 +4,14 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.UWP.Xaml.StateTriggers
+namespace Croft.Core.Xaml.StateTriggers
 {
     using System;
 
-    using Croft.Core.UWP.Enums;
-
     using Windows.System.Profile;
     using Windows.UI.Xaml;
+
+    using Croft.Core.Enums;
 
     /// <summary>
     /// The device trigger.
