@@ -1,7 +1,9 @@
-# Croft-Core
+# Croft.Core.UWP
 
 ## About
 I have built a lot of Windows apps over the last few years which have required a similar set of XAML extensions and controls that I've copied, pasted and reused amongst them all. This project is going to become the core for all of those features so that not only myself, but you reading this, can save time and effort in adding this common, core functionality into your apps so you have the time to spend enhancing your experiences.
+
+Essentially, you'll be able to get started with your universal Windows 10 apps without the hassle of getting things set up :smile:
 
 ## What's in the box
 As this is going to be an on-going project with numerous features being added as and when needed, [you can keep up-to-date with all of the common features on the Wiki](https://github.com/jamesmcroft/Croft-Core/wiki).
