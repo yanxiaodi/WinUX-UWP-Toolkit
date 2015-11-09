@@ -1,44 +1,16 @@
-# Personal core features for building universal Windows apps
-This is a collection of extensions, XAML controls, converters, behaviors and state triggers to use when building universal Windows apps.
+# Croft-Core
 
-## Contains the following
-### VisualStateTriggers
-- **ApiInformationTrigger**
-  - Used to set visual states based on a string representing a type to see if it is present for the current device.
-- **DeviceTrigger**
-  - Used to set visual states based on the current device type, i.e. Desktop, Mobile, SurfaceHub etc. 
+## About
+I have built a lot of Windows apps over the last few years which have required a similar set of XAML extensions and controls that I've copied, pasted and reused amongst them all. This project is going to become the core for all of those features so that not only myself, but you reading this, can save time and effort in adding this common, core functionality into your apps so you have the time to spend enhancing your experiences.
 
-### XAML Converters
-- **BooleanFormatConverter**
-  - Converts a boolean value to a string representing the value, e.g. True = Yes, False = No. 
-- **BooleanToVisibilityConverter**
-  - Converts a boolean value to a Visibility representing the value, e.g. True = Visible, False = Collapsed.
-- **DateTimeFormatConverter**
-  - Formats a DateTime value using ToString formatting.
-- **EmptyStringToVisibilityConverter**
-  - Converts an empty string value to a Visibility representing the value, e.g. If string empty, Collapsed, else Visible.
-- **EnumToVisibilityConverter**
-  - Converts an Enum value to a Visibility based on a matching parameter value. If match, Visible, else Collapsed.
-- **InverseBooleanToVisibilityConverter**
-  - Like *BooleanToVisibilityConverter* but reversed.
-- **MetricHeightFormatConverter**
-  - Converts a double meter value, i.e 1.2 (1m 20cm), to a string value represented based on a target unit of measure (metric or imperial).
-- **MetricWeightFormatConverter**
-  - Like *MetricHeightFormatConverter* but for weight values, i.e. 1.5 (1k 500g). 
+## What's in the box
+As this is going to be an on-going project with numerous features being added as and when needed, [you can keep up-to-date with all of the common features on the Wiki](https://github.com/jamesmcroft/Croft-Core/wiki).
 
-### Extensions
-- **DoubleExtensions**
-  - *ToFileSize()*
-    - Converts a double byte value to a file size represented as a string, e.g. 100 = 0.1KB, 1000000000 = 1GB
-- **StorageFileExtensions**
-  - *GetBasicProperties()*
-    - Gets a collection of basic properties from a StorageFile, e.g. Title, Author, DateTaken, Height, Width, Latitude, Longitude.
-      - NOTE, not all properties will be returned. The properties are based on the file type and if they exist on the StorageFile.
-  -  *GetExtendedProperties()*
-    -  Gets a collection of extended properties from a StorageFile, e.g. File name, File size, MIME type, Originating device, Image dimensions, Camera manufacturer/make.
-      - NOTE, not all properties will be returned. The properties are based on the file type and if they exist on the StorageFile. 
-- **StringExtensions**
-  - *IsEmpty()*
-    - Extended the string.IsNullOrWhiteSpace(str) method to also check if the string value is a DateTime or int value returning the min values. 
-  - *IsValidDate()*
-    - Checks whether a DateTime string value is a valid DateTime, i.e. Not null or not minimum value.
+## FAQ
+### Can I use this in my own project?
+Of course you can. Feel free to download the source and have a play around with it, or alternatively, there is a Nuget package available for you to add straight into your projects through Visual Studio.
+
+![Croft Core UWP Nuget](http://jamescroft.co.uk/wp-content/uploads/2015/11/nuget.png)
+
+### I've got some bits I'd like to add, can I?
+Again, you sure can. Although I've tailored the current core parts of this project to my own needs, I'm more than happy to see improvements made to things I've added as well as anything new you feel is missing! 
