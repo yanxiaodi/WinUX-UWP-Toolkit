@@ -68,7 +68,7 @@ namespace Croft.Core.Extensions
         /// <returns>
         /// Returns a boolean value, true if collection contains all the items in collectionX, else false.
         /// </returns>
-        public static bool ContainsAll<T>(this IEnumerable<T> collection, IEnumerable<T> collectionX)
+        public static bool Matches<T>(this IEnumerable<T> collection, IEnumerable<T> collectionX)
         {
             if (collection != null || collectionX != null)
             {
