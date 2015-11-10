@@ -131,6 +131,8 @@
     <Compile Include="Xaml\Converters\MetricHeightFormatConverter.cs" />
     <Compile Include="Xaml\Converters\InverseBooleanToVisibilityConverter.cs" />
     <Compile Include="Xaml\Converters\MetricWeightFormatConverter.cs" />
+    <Compile Include="Xaml\Converters\StringFormatConverter.cs" />
+    <Compile Include="Xaml\Converters\TimeSpanFormatConverter.cs" />
     <Compile Include="Xaml\StateTriggers\ApiInformationTrigger.cs" />
     <Compile Include="Xaml\StateTriggers\DeviceTrigger.cs" />
     <Content Include="Properties\Croft.Core.UWP.rd.xml" />
