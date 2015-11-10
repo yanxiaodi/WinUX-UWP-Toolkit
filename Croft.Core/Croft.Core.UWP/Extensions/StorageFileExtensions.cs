@@ -30,7 +30,7 @@ namespace Croft.Core.Extensions
         /// <returns>
         /// Returns a collection of StorageFileProperty.
         /// </returns>
-        public static async Task<IEnumerable<StorageFileProperty>> GetBasicProperties(this StorageFile file)
+        public static async Task<IEnumerable<StorageFileProperty>> GetPropertiesAsync(this StorageFile file)
         {
             var properties = new List<StorageFileProperty>();
 
@@ -51,7 +51,7 @@ namespace Croft.Core.Extensions
         /// <returns>
         /// The <see cref="Task"/>.
         /// </returns>
-        public static async Task<IEnumerable<StorageFileProperty>> GetExtendedProperties(this StorageFile file)
+        public static async Task<IEnumerable<StorageFileProperty>> GetExtendedPropertiesAsync(this StorageFile file)
         {
             var properties = new List<StorageFileProperty>();
 

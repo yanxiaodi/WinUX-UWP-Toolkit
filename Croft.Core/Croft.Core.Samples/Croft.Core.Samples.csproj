@@ -129,6 +129,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Croft.Core.Common\Croft.Core.Common.csproj">
+      <Project>{e92f28cc-fa17-4794-ad4c-d4fcf0b27d16}</Project>
+      <Name>Croft.Core.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Croft.Core.UWP\Croft.Core.UWP.csproj">
       <Project>{9ebf54fd-4ebf-4f49-96a6-69279a2d8ddf}</Project>
       <Name>Croft.Core.UWP</Name>

@@ -7,6 +7,7 @@
 namespace Croft.Core.Extensions
 {
     using System;
+    using System.Text;
 
     /// <summary>
     /// The string extensions.
@@ -49,6 +50,20 @@ namespace Croft.Core.Extensions
         {
             DateTime dt;
             return DateTime.TryParse(dateString, out dt) && dt != DateTime.MinValue && dt.Year != 1601;
+        }
+
+        /// <summary>
+        /// Converts a string to an array of bytes.
+        /// </summary>
+        /// <param name="str">
+        /// The string to convert.
+        /// </param>
+        /// <returns>
+        /// Returns the given string as an array of <see cref="byte"/>.
+        /// </returns>
+        public static byte[] ToByteArray(this string str)
+        {
+            return Encoding.UTF8.GetBytes(str);
         }
     }
 }

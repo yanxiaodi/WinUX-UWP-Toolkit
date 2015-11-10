@@ -40,11 +40,13 @@
     <Compile Include="Attributes\DescriptionAttribute.cs" />
     <Compile Include="Enums\AccentColor.cs" />
     <Compile Include="Enums\DeviceType.cs" />
+    <Compile Include="Enums\StorageFolderLocation.cs" />
     <Compile Include="Enums\UnitOfMeasure.cs" />
     <Compile Include="Extensions\AttributeExtensions.cs" />
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\UriExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
