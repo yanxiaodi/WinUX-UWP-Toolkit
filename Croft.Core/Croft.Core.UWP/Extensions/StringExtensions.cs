@@ -16,7 +16,7 @@ namespace Croft.Core.Extensions
     public static class StringExtensions
     {
         /// <summary>
-        /// Converts an ARGB hex value to a AccentColor.
+        /// Converts an ARGB hex value to a Color.
         /// </summary>
         /// <param name="argbHexValue">
         /// The argb hex value.
