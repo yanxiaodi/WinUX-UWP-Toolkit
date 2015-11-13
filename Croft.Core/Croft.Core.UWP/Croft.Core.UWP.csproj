@@ -118,6 +118,7 @@
     <Compile Include="Models\StorageFileProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validation\Rules\EmailValidationRule.cs" />
+    <Compile Include="Validation\Rules\UrlValidationRule.cs" />
     <Compile Include="Validation\ValidationRule.cs" />
     <Compile Include="Validation\ValidationRules.cs" />
     <Compile Include="Xaml\Controls\ValidatingTextBox.cs" />
