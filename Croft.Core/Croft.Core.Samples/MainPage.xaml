@@ -5,13 +5,41 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Croft.Core.Xaml.Controls"
+    xmlns:validation="using:Croft.Core.Validation"
+    xmlns:rules="using:Croft.Core.Validation.Rules"
     mc:Ignorable="d">
+    
+    <Page.Resources>
+        <validation:ValidationRules x:Key="DoubleSample">
+            <validation:ValidationRules.Rules>
+                <rules:DoubleValidationRule />
+            </validation:ValidationRules.Rules>
+        </validation:ValidationRules>
+
+        <validation:ValidationRules x:Key="IntSample">
+            <validation:ValidationRules.Rules>
+                <rules:IntValidationRule />
+            </validation:ValidationRules.Rules>
+        </validation:ValidationRules>
+
+        <validation:ValidationRules x:Key="UrlSample">
+            <validation:ValidationRules.Rules>
+                <rules:UrlValidationRule />
+            </validation:ValidationRules.Rules>
+        </validation:ValidationRules>
+
+        <validation:ValidationRules x:Key="EmailSample">
+            <validation:ValidationRules.Rules>
+                <rules:EmailValidationRule />
+            </validation:ValidationRules.Rules>
+        </validation:ValidationRules>
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ScrollViewer>
             <StackPanel>
                 <Border BorderThickness="0,1" BorderBrush="Black" Padding="12">
-                    <controls:ValidatingTextBox IsMandatory="True" Header="Test" MaxLength="10" />
+                    <controls:ValidatingTextBox IsMandatory="True" Header="Website" Text="http://www.jamescroft.co.uk" MaxLength="50" ValidationRules="{StaticResource UrlSample}" />
                 </Border>
             </StackPanel>
         </ScrollViewer>
