@@ -33,13 +33,19 @@
                 <rules:EmailValidationRule />
             </validation:ValidationRules.Rules>
         </validation:ValidationRules>
+        
+        <validation:ValidationRules x:Key="CharacterLimitSample">
+            <validation:ValidationRules.Rules>
+                <rules:CharacterLimitValidationRule MinLength="3" MaxLength="16" />
+            </validation:ValidationRules.Rules>
+        </validation:ValidationRules>
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ScrollViewer>
             <StackPanel>
                 <Border BorderThickness="0,1" BorderBrush="Black" Padding="12">
-                    <controls:ValidatingTextBox IsMandatory="True" Header="Website" Text="http://www.jamescroft.co.uk" MaxLength="50" ValidationRules="{StaticResource UrlSample}" />
+                    <controls:ValidatingTextBox IsMandatory="True" Header="Text" Text="Some invalid text for the box" ValidationRules="{StaticResource CharacterLimitSample}" />
                 </Border>
             </StackPanel>
         </ScrollViewer>
