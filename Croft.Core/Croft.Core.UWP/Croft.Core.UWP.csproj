@@ -108,9 +108,11 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\DependencyPropertyListener.cs" />
     <Compile Include="Diagnostics\Logger.cs" />
     <Compile Include="Extensions\AccentColorExtensions.cs" />
     <Compile Include="Extensions\ColorExtensions.cs" />
+    <Compile Include="Extensions\DependencyObjectExtensions.cs" />
     <Compile Include="Extensions\StorageFileExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Helpers\MessageDialogHelper.cs" />
