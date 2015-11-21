@@ -38,8 +38,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\DescriptionAttribute.cs" />
+    <Compile Include="Common\WeakEventListener.cs" />
     <Compile Include="Enums\AccentColor.cs" />
     <Compile Include="Enums\DeviceType.cs" />
+    <Compile Include="Enums\NetworkConnectionMode.cs" />
     <Compile Include="Enums\StorageFolderLocation.cs" />
     <Compile Include="Enums\UnitOfMeasure.cs" />
     <Compile Include="Exceptions\ControlNotFoundException.cs" />
