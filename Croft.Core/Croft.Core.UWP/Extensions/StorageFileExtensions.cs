@@ -14,7 +14,7 @@ namespace Croft.Core.Extensions
     using Windows.Storage;
     using Windows.Storage.FileProperties;
 
-    using Croft.Core.Models;
+    using Croft.Core.Storage;
 
     /// <summary>
     /// A collection of StorageFile extensions.

@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Helpers
+namespace Croft.Core.Location
 {
     using System;
 

@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Models
+namespace Croft.Core.Storage
 {
     /// <summary>
     /// The storage file property.

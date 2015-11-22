@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Helpers
+namespace Croft.Core.Messaging.Notifications
 {
     /// <summary>
     /// The notification helper.
