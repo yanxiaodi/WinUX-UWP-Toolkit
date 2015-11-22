@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\DescriptionAttribute.cs" />
+    <Compile Include="Collections\LimitedList.cs" />
     <Compile Include="Common\WeakEventListener.cs" />
     <Compile Include="Enums\AccentColor.cs" />
     <Compile Include="Enums\DeviceType.cs" />
