@@ -115,6 +115,7 @@
     <Compile Include="Extensions\DependencyObjectExtensions.cs" />
     <Compile Include="Extensions\StorageFileExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Helpers\GeolocationHelper.cs" />
     <Compile Include="Helpers\MessageDialogHelper.cs" />
     <Compile Include="Helpers\StorageHelper.cs" />
     <Compile Include="Models\StorageFileProperty.cs" />

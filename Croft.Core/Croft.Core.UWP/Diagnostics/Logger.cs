@@ -17,9 +17,8 @@
         {
 #if DEBUG
             System.Diagnostics.Debug.WriteLine($"Debug event: {message}");
-#endif
-
             this.WriteEvent(1, message);
+#endif
         }
 
         /// <summary>
