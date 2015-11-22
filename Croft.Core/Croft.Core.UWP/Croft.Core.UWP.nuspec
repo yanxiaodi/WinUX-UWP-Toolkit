@@ -10,8 +10,8 @@
     <iconUrl>http://jamescroft.co.uk/wp-content/uploads/2014/12/icon1.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A collection of core XAML controls and extensions to use in your personal universal Windows apps.</description>
-    <releaseNotes>Updated with new validation rules and more extensions. See GitHub Wiki (https://github.com/jamesmcroft/Croft-Core-UWP/wiki) for complete feature list.</releaseNotes>
+    <releaseNotes>Updated with a new VisualStateTrigger for connection status and updated the ValidatingTextBox. See GitHub Wiki (https://github.com/jamesmcroft/Croft-Core-UWP/wiki) for complete feature list.</releaseNotes>
     <copyright>Copyright (c) 2015 James Croft.</copyright>
-    <tags>UWP Windows10 Core VisualStateTrigger XAML Extensions</tags>
+    <tags>UWP Windows10 Core VisualStateTrigger XAML Extensions Validation</tags>
   </metadata>
 </package>

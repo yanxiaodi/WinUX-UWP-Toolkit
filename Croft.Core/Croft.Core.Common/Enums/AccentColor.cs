@@ -10,7 +10,7 @@
 namespace Croft.Core.Enums
 {
     /// <summary>
-    /// Accent color values.
+    /// Available accent colors.
     /// </summary>
     public enum AccentColor
     {

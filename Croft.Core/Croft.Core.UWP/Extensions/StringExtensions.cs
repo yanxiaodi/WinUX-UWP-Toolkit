@@ -11,7 +11,7 @@ namespace Croft.Core.Extensions
     using Windows.UI;
 
     /// <summary>
-    /// The string extensions.
+    /// A collection of string extensions.
     /// </summary>
     public static class StringExtensions
     {
@@ -19,10 +19,10 @@ namespace Croft.Core.Extensions
         /// Converts an ARGB hex value to a Color.
         /// </summary>
         /// <param name="argbHexValue">
-        /// The argb hex value.
+        /// The ARGB hex value represented as a string.
         /// </param>
         /// <returns>
-        /// The <see cref="Color"/>.
+        /// Returns the Color representation of the ARGB hex string value.
         /// </returns>
         public static Color ToColor(this string argbHexValue)
         {

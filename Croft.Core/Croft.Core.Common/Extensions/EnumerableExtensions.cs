@@ -9,13 +9,11 @@
 
 namespace Croft.Core.Extensions
 {
-    using System.Collections;
     using System.Collections.Generic;
-    using System.Collections.ObjectModel;
     using System.Linq;
 
     /// <summary>
-    /// The enumerable extensions.
+    /// A collection of IEnumerable extensions.
     /// </summary>
     public static class EnumerableExtensions
     {
@@ -29,7 +27,7 @@ namespace Croft.Core.Extensions
         /// The type of object within the collection.
         /// </typeparam>
         /// <returns>
-        /// The <see cref="bool"/>.
+        /// Returns a boolean value indicating whether the collection is null or empty.
         /// </returns>
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> collection)
         {
@@ -46,7 +44,7 @@ namespace Croft.Core.Extensions
         /// The type of object within the collection
         /// </typeparam>
         /// <returns>
-        /// The <see cref="string"/>.
+        /// Returns a string representation of the items within the collection separated by a comma.
         /// </returns>
         public static string ToCommaSeparatedString<T>(this IEnumerable<T> collection)
         {
@@ -70,26 +68,26 @@ namespace Croft.Core.Extensions
         /// </returns>
         public static bool Matches<T>(this IEnumerable<T> collection, IEnumerable<T> collectionX)
         {
-            if (collection != null || collectionX != null)
+            if (collection == null && collectionX == null)
             {
-                if (collection == null)
-                {
-                    return false;
-                }
-
-                if (collectionX == null)
-                {
-                    return false;
-                }
-
-                var list1 = collection as IList<T> ?? collection.ToList();
-                var list2 = collectionX as IList<T> ?? collectionX.ToList();
-
-                return list1.ToList().Count == list2.ToList().Count
-                       && list1.OrderBy(t => t).SequenceEqual(list2.OrderBy(t => t));
+                return true;
             }
 
-            return true;
+            if (collection == null)
+            {
+                return false;
+            }
+
+            if (collectionX == null)
+            {
+                return false;
+            }
+
+            var list1 = collection as IList<T> ?? collection.ToList();
+            var list2 = collectionX as IList<T> ?? collectionX.ToList();
+
+            return list1.ToList().Count == list2.ToList().Count
+                   && list1.OrderBy(t => t).SequenceEqual(list2.OrderBy(t => t));
         }
     }
 }

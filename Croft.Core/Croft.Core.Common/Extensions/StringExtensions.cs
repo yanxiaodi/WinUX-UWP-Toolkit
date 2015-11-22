@@ -10,7 +10,7 @@ namespace Croft.Core.Extensions
     using System.Text;
 
     /// <summary>
-    /// The string extensions.
+    /// A collection of string extensions.
     /// </summary>
     public static class StringExtensions
     {
@@ -18,10 +18,10 @@ namespace Croft.Core.Extensions
         /// Provides further checking on a string to see if it is a Date or numeric value, they are considered as empty.
         /// </summary>
         /// <param name="text">
-        /// The text.
+        /// The text to check.
         /// </param>
         /// <returns>
-        /// The <see cref="bool"/>.
+        /// Returns a boolean value indicating whether the text is empty.
         /// </returns>
         public static bool IsEmpty(this string text)
         {
@@ -41,10 +41,10 @@ namespace Croft.Core.Extensions
         /// Checks whether the date string is valid.
         /// </summary>
         /// <param name="dateString">
-        /// The date string.
+        /// The date string to check.
         /// </param>
         /// <returns>
-        /// The <see cref="bool"/>.
+        /// Returns a boolean value indicating whether the text is a valid DateTime value.
         /// </returns>
         public static bool IsValidDate(this string dateString)
         {

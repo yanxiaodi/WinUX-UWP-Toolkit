@@ -17,7 +17,7 @@ namespace Croft.Core.Extensions
     using Croft.Core.Models;
 
     /// <summary>
-    /// The storage file extensions.
+    /// A collection of StorageFile extensions.
     /// </summary>
     public static class StorageFileExtensions
     {

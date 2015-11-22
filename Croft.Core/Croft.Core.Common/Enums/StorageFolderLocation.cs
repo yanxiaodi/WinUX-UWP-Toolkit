@@ -7,7 +7,7 @@
 namespace Croft.Core.Enums
 {
     /// <summary>
-    /// The storage folder location.
+    /// Available storage folder locations.
     /// </summary>
     public enum StorageFolderLocation
     {

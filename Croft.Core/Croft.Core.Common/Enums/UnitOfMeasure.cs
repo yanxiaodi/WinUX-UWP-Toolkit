@@ -7,7 +7,7 @@
 namespace Croft.Core.Enums
 {
     /// <summary>
-    /// The unit of measure.
+    /// Available units of measure.
     /// </summary>
     public enum UnitOfMeasure
     {

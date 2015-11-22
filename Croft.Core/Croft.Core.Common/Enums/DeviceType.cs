@@ -10,7 +10,7 @@
 namespace Croft.Core.Enums
 {
     /// <summary>
-    /// The device type.
+    /// Available device types.
     /// </summary>
     public enum DeviceType
     {

@@ -12,7 +12,7 @@ namespace Croft.Core.Extensions
     using System.Net;
 
     /// <summary>
-    /// The uri extensions.
+    /// A collection of Uri extensions.
     /// </summary>
     public static class UriExtensions
     {
@@ -23,7 +23,7 @@ namespace Croft.Core.Extensions
         /// The Uri to extract the query results from.
         /// </param>
         /// <returns>
-        /// Returns a collection of KeyValuePairs
+        /// Returns a collection of KeyValuePairs containing the values of the query.
         /// </returns>
         public static IEnumerable<KeyValuePair<string, string>> ExtractQueryValues(this Uri uri)
         {

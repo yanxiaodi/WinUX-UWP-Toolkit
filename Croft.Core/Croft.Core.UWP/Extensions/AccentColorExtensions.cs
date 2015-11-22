@@ -14,7 +14,7 @@ namespace Croft.Core.Extensions
     using Croft.Core.Enums;
 
     /// <summary>
-    /// The accent color extensions.
+    /// A collection of AccentColor extensions.
     /// </summary>
     public static class AccentColorExtensions
     {
@@ -25,7 +25,7 @@ namespace Croft.Core.Extensions
         /// The accent color.
         /// </param>
         /// <returns>
-        /// The <see cref="Color"/>.
+        /// Returns a dark Color value for the given AccentColor.
         /// </returns>
         public static Color ToDarkAccentColor(this AccentColor accentColor)
         {
@@ -84,7 +84,7 @@ namespace Croft.Core.Extensions
         /// The accent color.
         /// </param>
         /// <returns>
-        /// The <see cref="Color"/>.
+        /// Returns a light Color value for the given AccentColor.
         /// </returns>
         public static Color ToLightAccentColor(this AccentColor accentColor)
         {
@@ -143,7 +143,7 @@ namespace Croft.Core.Extensions
         /// The accent color.
         /// </param>
         /// <returns>
-        /// The <see cref="Color"/>.
+        /// Returns a primary Color for the given AccentColor.
         /// </returns>
         public static Color ToPrimaryAccentColor(this AccentColor accentColor)
         {

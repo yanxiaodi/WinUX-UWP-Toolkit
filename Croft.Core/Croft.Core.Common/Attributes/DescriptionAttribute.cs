@@ -1,7 +1,19 @@
-﻿namespace Croft.Core.Attributes
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DescriptionAttribute.cs" company="James Croft">
+//   Copyright (c) 2015 James Croft.
+// </copyright>
+// <summary>
+//   Defines the DescriptionAttribute type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Croft.Core.Attributes
 {
     using System;
 
+    /// <summary>
+    /// The description attribute.
+    /// </summary>
     public class DescriptionAttribute : Attribute
     {
         /// <summary>

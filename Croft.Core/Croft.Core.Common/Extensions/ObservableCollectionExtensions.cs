@@ -12,7 +12,7 @@ namespace Croft.Core.Extensions
     using System.Linq;
 
     /// <summary>
-    /// The observable collection extensions.
+    /// A collection of ObservableCollection extensions.
     /// </summary>
     public static class ObservableCollectionExtensions
     {

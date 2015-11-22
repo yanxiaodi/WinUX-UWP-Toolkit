@@ -9,12 +9,14 @@ namespace Croft.Core.Extensions
     using System;
 
     /// <summary>
-    /// The double extensions.
+    /// The collection of double extensions.
     /// </summary>
     public static class DoubleExtensions
     {
         private const double KiloByte = 1024;
+
         private const double MegaByte = KiloByte * 1024;
+
         private const double GigaByte = MegaByte * 1024;
 
         /// <summary>
@@ -24,7 +26,7 @@ namespace Croft.Core.Extensions
         /// File size represented in bytes.
         /// </param>
         /// <returns>
-        /// The <see cref="string"/>.
+        /// Returns a string representation of the bytes as a file size.
         /// </returns>
         public static string ToFileSize(this double fileSize)
         {
