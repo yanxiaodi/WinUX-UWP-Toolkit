@@ -117,7 +117,15 @@
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Location\GeolocationHelper.cs" />
     <Compile Include="Messaging\Dialogs\MessageDialogHelper.cs" />
+    <Compile Include="Messaging\Notifications\NotificationActivationType.cs" />
+    <Compile Include="Messaging\Notifications\NotificationDuration.cs" />
     <Compile Include="Messaging\Notifications\NotificationHelper.cs" />
+    <Compile Include="Messaging\Notifications\NotificationScenario.cs" />
+    <Compile Include="Messaging\Notifications\Xml\BasePart.cs" />
+    <Compile Include="Messaging\Notifications\Xml\NotificationActionsPart.cs" />
+    <Compile Include="Messaging\Notifications\Xml\NotificationAudioPart.cs" />
+    <Compile Include="Messaging\Notifications\Xml\NotificationPart.cs" />
+    <Compile Include="Messaging\Notifications\Xml\NotificationVisualPart.cs" />
     <Compile Include="Storage\StorageHelper.cs" />
     <Compile Include="Storage\StorageFileProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -151,7 +159,6 @@
     <Content Include="Properties\Croft.Core.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Messaging\Notifications\Common\" />
     <Folder Include="Xaml\Behaviors\" />
   </ItemGroup>
   <ItemGroup>
