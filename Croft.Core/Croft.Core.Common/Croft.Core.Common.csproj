@@ -38,6 +38,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\DescriptionAttribute.cs" />
+    <Compile Include="Attributes\EnumStringAttribute.cs" />
+    <Compile Include="Attributes\Xml\XmlAttributeAttribute.cs" />
+    <Compile Include="Attributes\Xml\XmlContentAttribute.cs" />
+    <Compile Include="Attributes\Xml\XmlElementAttribute.cs" />
     <Compile Include="Collections\LimitedList.cs" />
     <Compile Include="Common\WeakEventListener.cs" />
     <Compile Include="Enums\AccentColor.cs" />
@@ -46,13 +50,14 @@
     <Compile Include="Enums\StorageFolderLocation.cs" />
     <Compile Include="Enums\UnitOfMeasure.cs" />
     <Compile Include="Exceptions\ControlNotFoundException.cs" />
-    <Compile Include="Extensions\AttributeExtensions.cs" />
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\ObservableCollectionExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\UriExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xml\XmlWriterHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

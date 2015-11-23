@@ -151,6 +151,7 @@
     <Content Include="Properties\Croft.Core.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Messaging\Notifications\Common\" />
     <Folder Include="Xaml\Behaviors\" />
   </ItemGroup>
   <ItemGroup>
