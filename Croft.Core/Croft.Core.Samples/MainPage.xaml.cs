@@ -6,6 +6,8 @@
 
 namespace Croft.Core.Samples
 {
+    using Windows.UI.Xaml;
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -17,6 +19,10 @@ namespace Croft.Core.Samples
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void OnSnoozeAndDismissClicked(object sender, RoutedEventArgs e)
+        {
         }
     }
 }
