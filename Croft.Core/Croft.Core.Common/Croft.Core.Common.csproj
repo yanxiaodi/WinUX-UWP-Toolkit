@@ -50,7 +50,7 @@
     <Compile Include="Enums\StorageFolderLocation.cs" />
     <Compile Include="Enums\UnitOfMeasure.cs" />
     <Compile Include="Exceptions\ControlNotFoundException.cs" />
-    <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Extensions\AttributeExtensions.cs" />
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\ObservableCollectionExtensions.cs" />

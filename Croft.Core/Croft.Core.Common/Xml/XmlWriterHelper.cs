@@ -1,87 +1,63 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="XmlWriterHelper.cs" company="James Croft">
-//   Copyright (c) 2015 James Croft.
-// </copyright>
-// <summary>
-//   Defines the XmlWriterHelper type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Croft.Core.Xml
+﻿namespace Croft.Core.Xml
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Reflection;
     using System.Xml;
 
-    using Croft.Core.Attributes.Xml;
     using Croft.Core.Extensions;
+    using Croft.Core.Messaging.Notifications;
 
-    /// <summary>
-    /// An XmlWriter helper.
-    /// </summary>
     public static class XmlWriterHelper
     {
-        public static void Write(XmlWriter writer, object element)
+        public static void Write(XmlWriter writer, object xmlElement)
         {
-            var xmlElementAttr = element.GetCustomAttributesOfType<XmlElementAttribute>().FirstOrDefault();
+            var elementAttribute = xmlElement.GetType().GetTypeInfo().GetCustomAttributes().OfType<XmlElementAttribute>().FirstOrDefault();
+            if (elementAttribute == null) return;
 
-            if (xmlElementAttr == null)
-            {
-                // Don't want to write out anything that doesn't use the XmlElementAttribute
-                return;
-            }
+            writer.WriteStartElement(elementAttribute.Name);
 
-            writer.WriteStartElement(xmlElementAttr.Name); // Start writing an element.
+            var elementProperties = xmlElement.GetType().GetTypeInfo().DeclaredProperties;
 
-            var xmlElementProps = element.GetAllProperties();
-
-            var elements = new List<object>();
+            var childElements = new List<object>();
             object content = null;
 
-            // Write out the attributes.
-            foreach (var prop in xmlElementProps)
+            foreach (var propertyInfo in elementProperties)
             {
-                var attributes = prop.GetCustomAttributesOfType<Attribute>();
+                var propertyValue = propertyInfo.GetValue(xmlElement);
 
-                var propXmlAttr = attributes.OfType<XmlAttributeAttribute>().FirstOrDefault();
+                var attributes = propertyInfo.GetCustomAttributes().ToList();
 
-                var propValue = prop.GetValue(element, null);
-
-                if (propXmlAttr != null)
+                var propertyXmlAttribute = attributes.OfType<XmlAttributeAttribute>().FirstOrDefault();
+                if (propertyXmlAttribute != null)
                 {
-                    // If we have an XmlAttribute to add.
-                    var defaultPropValue = propXmlAttr.DefaultValue;
+                    var defaultValue = propertyXmlAttribute.DefaultValue;
 
-                    // If we have a different value to the default.
-                    if (!object.Equals(propValue, defaultPropValue) && propValue != null)
+                    if (!object.Equals(propertyValue, defaultValue) && propertyValue != null)
                     {
-                        writer.WriteAttributeString(propXmlAttr.Name, propValue.GetPropertyValueAsString());
+                        writer.WriteAttributeString(propertyXmlAttribute.Name, ToEnumString(propertyValue));
                     }
                 }
                 else if (attributes.OfType<XmlContentAttribute>().Any())
                 {
-                    // We want to write the content out into the element
-                    content = propValue;
+                    content = propertyValue;
                 }
                 else
                 {
-                    // If we get here, we have elements or collection of elements left.
-                    if (propValue != null)
+                    if (propertyValue != null)
                     {
-                        elements.Add(propValue);
+                        childElements.Add(propertyValue);
                     }
                 }
             }
 
-            // Run through all of the child elements we found earlier.
-            foreach (var e in elements)
+            foreach (var childElement in childElements)
             {
-                if (e is IEnumerable)
+                if (childElement is IEnumerable)
                 {
-                    // If it's a collection, we need to write them all out.
-                    foreach (var child in e as IEnumerable)
+                    foreach (var child in childElement as IEnumerable)
                     {
                         Write(writer, child);
                     }
@@ -89,17 +65,33 @@ namespace Croft.Core.Xml
                     continue;
                 }
 
-                // Else just write the element out.
-                Write(writer, e);
+                Write(writer, childElement);
             }
 
-            string str = content?.ToString();
-            if (!string.IsNullOrWhiteSpace(str))
+            var contentString = content?.ToString();
+            if (!string.IsNullOrWhiteSpace(contentString))
             {
-                writer.WriteString(str);
+                writer.WriteString(contentString);
             }
 
-            writer.WriteEndElement(); // Complete writing the element.
+            writer.WriteEndElement();
+        }
+
+        private static string ToEnumString(object propertyValue)
+        {
+            var type = propertyValue.GetType();
+
+            if (type.GetTypeInfo().IsEnum)
+            {
+                var enumStringAttr = (propertyValue as Enum).GetEnumStringAttribute();
+
+                if (enumStringAttr != null)
+                {
+                    return enumStringAttr.String;
+                }
+            }
+
+            return propertyValue.ToString();
         }
     }
 }

@@ -1,16 +1,15 @@
 ﻿namespace Croft.Core.Extensions
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
 
     using Croft.Core.Attributes;
 
     /// <summary>
-    /// A collection of System.Reflection extensions.
+    /// A collection of Attribute extensions.
     /// </summary>
-    public static class ReflectionExtensions
+    public static class AttributeExtensions
     {
         /// <summary>
         /// Retrieves the description attribute from an object if it exists.
@@ -33,34 +32,13 @@
             return attribute != null ? attribute.ConstructorArguments[0].Value.ToString() : obj.ToString();
         }
 
-        public static IEnumerable<T> GetCustomAttributesOfType<T>(this object obj) where T : Attribute
+        public static EnumStringAttribute GetEnumStringAttribute(this Enum enumVal)
         {
-            var type = obj.GetType();
-            return type.GetTypeInfo().GetCustomAttributes().OfType<T>();
-        }
-
-        public static IEnumerable<PropertyInfo> GetAllProperties(this object obj)
-        {
-            var type = obj.GetType();
-            return type.GetTypeInfo().DeclaredProperties;
-        }
-
-        public static string GetPropertyValueAsString(this object propertyValue)
-        {
-            var type = propertyValue.GetType();
-
-            if (type.GetTypeInfo().IsEnum)
-            {
-                var enumObj = propertyValue as Enum;
-
-                var enumStringAttr = enumObj.GetCustomAttributesOfType<EnumStringAttribute>().FirstOrDefault();
-                if (enumStringAttr != null)
-                {
-                    return enumStringAttr.ToString();
-                }
-            }
-
-            return propertyValue.ToString();
+            return
+                enumVal.GetType()
+                    .GetTypeInfo()
+                    .GetDeclaredField(enumVal.ToString())
+                    .GetCustomAttribute<EnumStringAttribute>();
         }
     }
 }
