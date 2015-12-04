@@ -143,7 +143,7 @@ namespace Croft.Core.Messaging.Dialogs
         /// <returns>
         /// Returns an awaitable task.
         /// </returns>
-        public async Task ShowAsync(string title, string message, IUICommand[] commands)
+        public async Task ShowAsync(string title, string message, params IUICommand[] commands)
         {
             var tcs = new TaskCompletionSource<bool>();
 
