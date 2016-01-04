@@ -168,6 +168,7 @@
     <Compile Include="Validation\Rules\UrlValidationRule.cs" />
     <Compile Include="Validation\ValidationRule.cs" />
     <Compile Include="Validation\ValidationRules.cs" />
+    <Compile Include="Xaml\Behaviors\FileThumbnailImageSourceBehavior.cs" />
     <Compile Include="Xaml\Controls\ValidatingTextBox.cs" />
     <Compile Include="Xaml\Converters\BooleanFormatConverter.cs" />
     <Compile Include="Xaml\Converters\BooleanToVisibilityConverter.cs" />
@@ -190,9 +191,7 @@
     <Compile Include="Xaml\StateTriggers\NetworkConnectionTrigger.cs" />
     <Content Include="Properties\Croft.Core.UWP.rd.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Xaml\Behaviors\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Croft.Core.Common\Croft.Core.Common.csproj">
       <Project>{e92f28cc-fa17-4794-ad4c-d4fcf0b27d16}</Project>
