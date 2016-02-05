@@ -9,6 +9,7 @@ namespace Croft.Core.Extensions
     using System;
 
     using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Media;
 
     using Croft.Core.Common;
 
@@ -35,6 +36,39 @@ namespace Croft.Core.Extensions
         public static IDisposable ListenToProperty(this DependencyObject obj, string propertyName, DependencyPropertyChangedEventHandler eventHandler)
         {
             return new DependencyPropertyListener(obj, propertyName, eventHandler);
+        }
+
+        /// <summary>
+        /// Finds a child DependencyObject of a certain type from the given DependencyObject.
+        /// </summary>
+        /// <typeparam name="T">
+        /// The type of object to find.
+        /// </typeparam>
+        /// <param name="d">
+        /// The DependencyObject to start looking from.
+        /// </param>
+        /// <returns>
+        /// Returns the requested object, if it exists.
+        /// </returns>
+        public static T FindChildElementOfType<T>(this DependencyObject d) where T : DependencyObject
+        {
+            if (d == null)
+            {
+                return null;
+            }
+
+            for (var i = 0; i < VisualTreeHelper.GetChildrenCount(d); i++)
+            {
+                var child = VisualTreeHelper.GetChild(d, i);
+
+                var result = child as T ?? FindChildElementOfType<T>(child);
+                if (result != null)
+                {
+                    return result;
+                }
+            }
+
+            return null;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Croft.Core.Xaml.Behaviors
     /// <summary>
     /// The file thumbnail image source behavior.
     /// </summary>
-    public class FileThumbnailImageSourceBehavior : DependencyObject, IBehavior
+    public class FileThumbnailImageSourceBehavior : Behavior
     {
         public static readonly DependencyProperty FileProperty = DependencyProperty.Register(
             "File",
@@ -66,23 +66,6 @@ namespace Croft.Core.Xaml.Behaviors
             }
         }
 
-        public void Attach(DependencyObject associatedObject)
-        {
-            if (this.AssociatedObject != null)
-            {
-                throw new InvalidOperationException("Cannot assign to the behavior twice.");
-            }
-
-            this.AssociatedObject = associatedObject;
-        }
-
-        public void Detach()
-        {
-            this.AssociatedObject = null;
-        }
-
         public Image Parent => this.AssociatedObject as Image;
-
-        public DependencyObject AssociatedObject { get; private set; }
     }
 }

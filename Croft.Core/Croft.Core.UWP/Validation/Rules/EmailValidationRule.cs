@@ -32,7 +32,8 @@
             }
 
             const string EmailPattern =
-                @"^([0-9a-zA-Z](?>[-.+\w]*[0-9a-zA-Z])*@(?>[0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$";
+                @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|" + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)"
+                + @"@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
 
             var regex = new Regex(EmailPattern, RegexOptions.IgnoreCase);
             return regex.IsMatch(val);

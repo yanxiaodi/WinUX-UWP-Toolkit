@@ -1,6 +1,6 @@
 ﻿namespace Croft.Core.Validation.Rules
 {
-    using System.Text.RegularExpressions;
+    using System;
 
     public class UrlValidationRule : ValidationRule
     {
@@ -31,11 +31,13 @@
                 return true;
             }
 
-            const string UrlPattern =
-                @"(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?";
+            return Uri.IsWellFormedUriString(val, UriKind.Absolute);
 
-            var reg = new Regex(UrlPattern, RegexOptions.IgnoreCase);
-            return reg.IsMatch(val);
+            //const string UrlPattern =
+            //    @"(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?";
+
+            //var reg = new Regex(UrlPattern, RegexOptions.IgnoreCase);
+            //return reg.IsMatch(val);
         }
     }
 }

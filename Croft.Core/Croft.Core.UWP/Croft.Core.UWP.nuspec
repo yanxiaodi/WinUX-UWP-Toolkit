@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.7</version>
+    <version>1.1.1</version>
     <title>Croft.Core.UWP</title>
     <authors>James Croft</authors>
     <owners>James Croft</owners>
@@ -10,8 +10,8 @@
     <iconUrl>http://jamescroft.co.uk/wp-content/uploads/2014/12/icon1.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A collection of core XAML controls and extensions to use in your personal universal Windows apps.</description>
-    <releaseNotes>Updated with a new VisualStateTrigger for connection status and updated the ValidatingTextBox. See GitHub Wiki (https://github.com/jamesmcroft/Croft-Core-UWP/wiki) for complete feature list.</releaseNotes>
-    <copyright>Copyright (c) 2015 James Croft.</copyright>
-    <tags>UWP Windows10 Core VisualStateTrigger XAML Extensions Validation</tags>
+    <releaseNotes>Updated the validation rules to provide better support for standards in URL and e-mail. Added UIElementParallaxEffectBehavior from my sample hosted on GitHub. See GitHub Wiki (https://github.com/jamesmcroft/Croft-Core-UWP/wiki) for complete feature list.</releaseNotes>
+    <copyright>Copyright (c) 2016 James Croft.</copyright>
+    <tags>UWP Windows10 Core VisualStateTrigger XAML Extensions Validation MVVM WinComposition Controls</tags>
   </metadata>
 </package>

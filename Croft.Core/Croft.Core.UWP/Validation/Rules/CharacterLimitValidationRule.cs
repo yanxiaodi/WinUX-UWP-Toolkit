@@ -70,9 +70,9 @@ namespace Croft.Core.Validation.Rules
             }
 
             var val = value.ToString();
-            if (val == null)
+            if (string.IsNullOrWhiteSpace(val))
             {
-                throw new InvalidOperationException("Value must be a string.");
+                return true;
             }
 
             return (val.Length <= this.MaxLength || this.MaxLength == 0) && val.Length >= this.MinLength;

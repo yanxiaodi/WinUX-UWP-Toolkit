@@ -194,3 +194,4 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+/Croft.Core/Croft.Core.Common/Croft.Core.Common.nuspec

@@ -23,8 +23,14 @@
                 return false;
             }
 
-            double val;
-            return double.TryParse(value.ToString(), out val);
+            var val = value.ToString();
+            if (string.IsNullOrWhiteSpace(val))
+            {
+                return true;
+            }
+
+            double dblVal;
+            return double.TryParse(val, out dblVal);
         }
     }
 }
