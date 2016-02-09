@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Attributes
+namespace WinUX.Attributes
 {
     using System;
 

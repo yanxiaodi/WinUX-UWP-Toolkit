@@ -7,13 +7,13 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Location
+namespace WinUX.Location
 {
     using System;
 
     using Windows.Devices.Geolocation;
 
-    using Croft.Core.Diagnostics;
+    using WinUX.Diagnostics;
 
     /// <summary>
     /// The geolocation helper.

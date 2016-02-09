@@ -1,4 +1,4 @@
-﻿namespace Croft.Core.Xml
+﻿namespace WinUX.Xml
 {
     using System;
     using System.Collections;
@@ -7,8 +7,8 @@
     using System.Reflection;
     using System.Xml;
 
-    using Croft.Core.Extensions;
-    using Croft.Core.Messaging.Notifications;
+    using WinUX.Attributes.Xml;
+    using WinUX.Extensions;
 
     public static class XmlWriterHelper
     {

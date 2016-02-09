@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Common
+namespace WinUX.Common
 {
     using System;
 

@@ -4,11 +4,11 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Extensions
+namespace WinUX.Extensions
 {
     using Windows.System.Profile;
 
-    using Croft.Core.Enums;
+    using WinUX.Enums;
 
     public static class AnalyticsInfoExtensions
     {

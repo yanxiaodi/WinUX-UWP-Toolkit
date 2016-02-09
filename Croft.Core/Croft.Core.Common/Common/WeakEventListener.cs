@@ -1,4 +1,4 @@
-﻿namespace Croft.Core.Common
+﻿namespace WinUX.Common
 {
     using System;
 
@@ -23,20 +23,20 @@
 
         public void OnEvent(TSource source)
         {
-            var target = (TInstance)_weakInstance.Target;
+            var target = (TInstance)this._weakInstance.Target;
             if (target != null)
             {
                 this.OnEventAction?.Invoke(target, source);
             }
             else
             {
-                Detach();
+                this.Detach();
             }
         }
 
         public void Detach()
         {
-            var target = (TInstance)_weakInstance.Target;
+            var target = (TInstance)this._weakInstance.Target;
             if (this.OnDetachAction == null)
             {
                 return;
@@ -67,20 +67,20 @@
 
         public void OnEvent(TSource source, TEventArgs eventArgs)
         {
-            var target = (TInstance)_weakInstance.Target;
+            var target = (TInstance)this._weakInstance.Target;
             if (target != null)
             {
                 this.OnEventAction?.Invoke(target, source, eventArgs);
             }
             else
             {
-                Detach();
+                this.Detach();
             }
         }
 
         public void Detach()
         {
-            var target = (TInstance)_weakInstance.Target;
+            var target = (TInstance)this._weakInstance.Target;
             if (this.OnDetachAction == null)
             {
                 return;

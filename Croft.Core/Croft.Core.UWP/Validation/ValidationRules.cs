@@ -7,9 +7,11 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Validation
+namespace WinUX.Validation
 {
     using System.Collections.Generic;
+
+    using WinUX.Validation.Rules.Common;
 
     /// <summary>
     /// A collection for containing ValidationRules.

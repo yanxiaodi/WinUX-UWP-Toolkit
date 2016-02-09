@@ -7,9 +7,9 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Validation.Rules
+namespace WinUX.Validation.Rules
 {
-    using System;
+    using WinUX.Validation.Rules.Common;
 
     /// <summary>
     /// The character limit validation rule.

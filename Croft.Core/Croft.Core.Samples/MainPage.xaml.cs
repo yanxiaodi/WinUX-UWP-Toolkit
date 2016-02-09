@@ -4,16 +4,16 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Samples
+namespace WinUX.Sample
 {
     using System;
 
     using Windows.UI.Notifications;
     using Windows.UI.Xaml;
 
-    using Croft.Core.Messaging.Notifications.Actions;
-    using Croft.Core.Messaging.Notifications.Content;
-    using Croft.Core.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.Actions;
+    using WinUX.Messaging.Notifications.Content;
+    using WinUX.Messaging.Notifications.Enums;
 
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.

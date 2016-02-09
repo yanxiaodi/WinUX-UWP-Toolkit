@@ -1,7 +1,7 @@
-namespace Croft.Core.Messaging.Notifications.Content
+namespace WinUX.Messaging.Notifications.Content
 {
-    using Croft.Core.Messaging.Notifications.Enums;
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class NotificationAppLogo
     {

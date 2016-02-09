@@ -1,10 +1,10 @@
-namespace Croft.Core.Messaging.Notifications.XmlParts
+namespace WinUX.Messaging.Notifications.XmlParts
 {
     using System.IO;
     using System.Text;
     using System.Xml;
 
-    using Croft.Core.Xml;
+    using WinUX.Xml;
 
     using XmlDocument = Windows.Data.Xml.Dom.XmlDocument;
 

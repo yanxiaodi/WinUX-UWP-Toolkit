@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Xaml.Converters
+namespace WinUX.Xaml.Converters
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace Croft.Core.Xaml.Converters
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Data;
 
-    using Croft.Core.Enums;
+    using WinUX.Enums;
 
     /// <summary>
     /// The metric height format converter.

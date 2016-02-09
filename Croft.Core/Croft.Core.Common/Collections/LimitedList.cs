@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Collections
+namespace WinUX.Collections
 {
     using System;
     using System.Collections;

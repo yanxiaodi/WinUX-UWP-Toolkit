@@ -1,7 +1,7 @@
-namespace Croft.Core.Messaging.Notifications.XmlParts
+namespace WinUX.Messaging.Notifications.XmlParts
 {
-    using Croft.Core.Messaging.Notifications;
-    using Croft.Core.Messaging.Notifications.XmlParts.Interfaces;
+    using WinUX.Attributes.Xml;
+    using WinUX.Messaging.Notifications.XmlParts.Interfaces;
 
     [XmlElement("text")]
     internal sealed class NotificationTextPart : INotificationBindingPart

@@ -4,17 +4,17 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Helpers
+namespace WinUX.Storage
 {
     using System;
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
 
-    using Croft.Core.Enums;
-
     using Windows.Storage;
     using Windows.Storage.Streams;
+
+    using WinUX.Enums;
 
     /// <summary>
     /// The storage helper.

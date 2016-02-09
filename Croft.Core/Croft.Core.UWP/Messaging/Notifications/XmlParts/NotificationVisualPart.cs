@@ -1,9 +1,9 @@
-namespace Croft.Core.Messaging.Notifications.XmlParts
+namespace WinUX.Messaging.Notifications.XmlParts
 {
     using System;
     using System.Collections.Generic;
 
-    using Croft.Core.Messaging.Notifications;
+    using WinUX.Attributes.Xml;
 
     [XmlElement("visual")]
     internal sealed class NotificationVisualPart

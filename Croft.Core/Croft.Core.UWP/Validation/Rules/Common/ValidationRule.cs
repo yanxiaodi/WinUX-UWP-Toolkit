@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Validation
+namespace WinUX.Validation.Rules.Common
 {
     /// <summary>
     /// A base class for validation rules.

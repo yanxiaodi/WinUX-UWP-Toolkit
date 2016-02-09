@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Storage
+namespace WinUX.Storage
 {
     /// <summary>
     /// The storage file property.

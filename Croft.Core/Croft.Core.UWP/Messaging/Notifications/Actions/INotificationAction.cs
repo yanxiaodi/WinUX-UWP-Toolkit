@@ -1,4 +1,4 @@
-namespace Croft.Core.Messaging.Notifications.Actions
+namespace WinUX.Messaging.Notifications.Actions
 {
     public interface INotificationAction
     {

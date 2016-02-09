@@ -7,14 +7,14 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Xaml.Converters.Colors
+namespace WinUX.Xaml.Converters.Colors
 {
     using System;
 
     using Windows.UI.Xaml.Data;
     using Windows.UI.Xaml.Media;
 
-    using Croft.Core.Extensions;
+    using WinUX.Extensions;
 
     /// <summary>
     /// The brush to light accent brush converter.

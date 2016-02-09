@@ -1,5 +1,7 @@
-﻿namespace Croft.Core.Validation.Rules
+﻿namespace WinUX.Validation.Rules
 {
+    using WinUX.Validation.Rules.Common;
+
     public class DoubleValidationRule : ValidationRule
     {
         /// <summary>

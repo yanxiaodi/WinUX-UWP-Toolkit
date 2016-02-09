@@ -1,4 +1,4 @@
-﻿namespace Croft.Core.Xaml.StateTriggers
+﻿namespace WinUX.Xaml.StateTriggers
 {
     using System;
 
@@ -6,8 +6,8 @@
     using Windows.UI.Core;
     using Windows.UI.Xaml;
 
-    using Croft.Core.Common;
-    using Croft.Core.Enums;
+    using WinUX.Common;
+    using WinUX.Enums;
 
     public class NetworkConnectionTrigger : StateTriggerBase
     {
@@ -31,11 +31,11 @@
         {
             get
             {
-                return (NetworkConnectionMode)GetValue(ConnectionModeProperty);
+                return (NetworkConnectionMode)this.GetValue(ConnectionModeProperty);
             }
             set
             {
-                SetValue(ConnectionModeProperty, value);
+                this.SetValue(ConnectionModeProperty, value);
             }
         }
 
@@ -80,7 +80,7 @@
 
         private void OnNetworkStatusChanged()
         {
-            var asyncAction = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, this.UpdateState);
+            var asyncAction = this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, this.UpdateState);
         }
 
         private void UpdateState()

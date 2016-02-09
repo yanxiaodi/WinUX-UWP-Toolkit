@@ -1,8 +1,8 @@
-namespace Croft.Core.Messaging.Notifications.Content
+namespace WinUX.Messaging.Notifications.Content
 {
     using System;
 
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class NotificationImageSource
     {

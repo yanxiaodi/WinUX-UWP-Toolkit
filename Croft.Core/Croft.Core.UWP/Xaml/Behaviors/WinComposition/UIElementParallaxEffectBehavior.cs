@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Xaml.Behaviors.WinComposition
+namespace WinUX.Xaml.Behaviors.WinComposition
 {
     using System;
 
@@ -12,9 +12,9 @@ namespace Croft.Core.Xaml.Behaviors.WinComposition
     using Windows.UI.Xaml.Controls;
     using Windows.UI.Xaml.Hosting;
 
-    using Croft.Core.Extensions;
-
     using Microsoft.Xaml.Interactivity;
+
+    using WinUX.Extensions;
 
     public class UIElementParallaxEffectBehavior : Behavior
     {
@@ -36,11 +36,11 @@ namespace Croft.Core.Xaml.Behaviors.WinComposition
         {
             get
             {
-                return (double)GetValue(ParallaxMultiplierProperty);
+                return (double)this.GetValue(ParallaxMultiplierProperty);
             }
             set
             {
-                SetValue(ParallaxMultiplierProperty, value);
+                this.SetValue(ParallaxMultiplierProperty, value);
             }
         }
 

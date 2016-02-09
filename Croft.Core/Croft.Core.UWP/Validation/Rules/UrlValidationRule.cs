@@ -1,6 +1,8 @@
-﻿namespace Croft.Core.Validation.Rules
+﻿namespace WinUX.Validation.Rules
 {
     using System;
+
+    using WinUX.Validation.Rules.Common;
 
     public class UrlValidationRule : ValidationRule
     {

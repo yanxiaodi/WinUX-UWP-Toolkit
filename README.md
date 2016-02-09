@@ -1,4 +1,4 @@
-# Croft.Core.UWP
+# WinUX UWP Toolkit
 A toolkit containing a set of UWP controls, value converters, behaviors, visual state triggers, extensions and more!
 
 [![NuGet](https://img.shields.io/nuget/dt/Croft.Core.UWP.svg?style=flat-square)](https://www.nuget.org/packages/Croft.Core.UWP/)

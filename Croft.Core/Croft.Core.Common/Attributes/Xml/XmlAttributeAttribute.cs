@@ -1,4 +1,4 @@
-namespace Croft.Core.Messaging.Notifications
+namespace WinUX.Attributes.Xml
 {
     using System;
 

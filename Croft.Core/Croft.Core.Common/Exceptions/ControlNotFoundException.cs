@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Exceptions
+namespace WinUX.Exceptions
 {
     using System;
 

@@ -1,10 +1,10 @@
-﻿namespace Croft.Core.Extensions
+﻿namespace WinUX.Extensions
 {
     using System;
     using System.Linq;
     using System.Reflection;
 
-    using Croft.Core.Attributes;
+    using WinUX.Attributes;
 
     /// <summary>
     /// A collection of Attribute extensions.

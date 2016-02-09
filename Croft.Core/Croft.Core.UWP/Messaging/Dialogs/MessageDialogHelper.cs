@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Messaging.Dialogs
+namespace WinUX.Messaging.Dialogs
 {
     using System;
     using System.Threading;

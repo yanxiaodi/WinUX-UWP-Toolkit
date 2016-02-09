@@ -1,9 +1,9 @@
-namespace Croft.Core.Messaging.Notifications.Inputs
+namespace WinUX.Messaging.Notifications.Inputs
 {
     using System;
 
-    using Croft.Core.Messaging.Notifications.Enums;
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class NotificationTextBox : INotificationInput
     {

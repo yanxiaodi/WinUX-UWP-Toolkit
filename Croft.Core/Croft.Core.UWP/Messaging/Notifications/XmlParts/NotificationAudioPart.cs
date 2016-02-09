@@ -1,8 +1,8 @@
-namespace Croft.Core.Messaging.Notifications.XmlParts
+namespace WinUX.Messaging.Notifications.XmlParts
 {
     using System;
 
-    using Croft.Core.Messaging.Notifications;
+    using WinUX.Attributes.Xml;
 
     [XmlElement("audio")]
     internal sealed class NotificationAudioPart

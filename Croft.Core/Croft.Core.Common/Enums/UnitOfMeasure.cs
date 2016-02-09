@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Enums
+namespace WinUX.Enums
 {
     /// <summary>
     /// Available units of measure.

@@ -1,8 +1,8 @@
-﻿namespace Croft.Core.Extensions
+﻿namespace WinUX.Extensions
 {
     using Windows.UI;
 
-    using Croft.Core.Enums;
+    using WinUX.Enums;
 
     public static class ColorExtensions
     {

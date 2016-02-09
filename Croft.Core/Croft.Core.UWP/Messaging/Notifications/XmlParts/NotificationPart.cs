@@ -1,6 +1,7 @@
-namespace Croft.Core.Messaging.Notifications.XmlParts
+namespace WinUX.Messaging.Notifications.XmlParts
 {
-    using Croft.Core.Messaging.Notifications.Enums;
+    using WinUX.Attributes.Xml;
+    using WinUX.Messaging.Notifications.Enums;
 
     [XmlElement("toast")]
     internal sealed class NotificationPart : XmlPartBase

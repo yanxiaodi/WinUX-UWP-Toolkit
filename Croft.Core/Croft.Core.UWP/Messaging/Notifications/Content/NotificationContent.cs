@@ -1,12 +1,12 @@
-namespace Croft.Core.Messaging.Notifications.Content
+namespace WinUX.Messaging.Notifications.Content
 {
     using System;
 
     using Windows.Data.Xml.Dom;
 
-    using Croft.Core.Messaging.Notifications.Actions;
-    using Croft.Core.Messaging.Notifications.Enums;
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Messaging.Notifications.Actions;
+    using WinUX.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class NotificationContent : INotificationContent
     {

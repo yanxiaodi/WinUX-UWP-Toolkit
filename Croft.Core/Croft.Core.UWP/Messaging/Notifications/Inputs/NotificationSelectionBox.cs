@@ -1,11 +1,11 @@
-namespace Croft.Core.Messaging.Notifications.Inputs
+namespace WinUX.Messaging.Notifications.Inputs
 {
     using System;
     using System.Collections.Generic;
 
-    using Croft.Core.Collections;
-    using Croft.Core.Messaging.Notifications.Enums;
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Collections;
+    using WinUX.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class NotificationSelectionBox : INotificationInput
     {

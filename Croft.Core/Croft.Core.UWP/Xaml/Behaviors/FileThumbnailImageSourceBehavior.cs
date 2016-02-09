@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Xaml.Behaviors
+namespace WinUX.Xaml.Behaviors
 {
     using System;
 

@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="using:Croft.Core.Xaml.Controls">
+    xmlns:controls="using:WinUX.Xaml.Controls">
 
     <Color x:Key="ErrorColor">#FFE84F24</Color>
     <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource ErrorColor}" />

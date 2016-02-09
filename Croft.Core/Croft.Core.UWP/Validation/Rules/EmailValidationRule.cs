@@ -1,6 +1,8 @@
-﻿namespace Croft.Core.Validation.Rules
+﻿namespace WinUX.Validation.Rules
 {
     using System.Text.RegularExpressions;
+
+    using WinUX.Validation.Rules.Common;
 
     public class EmailValidationRule : ValidationRule
     {

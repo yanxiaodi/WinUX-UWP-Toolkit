@@ -1,13 +1,13 @@
-namespace Croft.Core.Messaging.Notifications.Actions
+namespace WinUX.Messaging.Notifications.Actions
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    using Croft.Core.Collections;
-    using Croft.Core.Messaging.Notifications.Buttons;
-    using Croft.Core.Messaging.Notifications.Inputs;
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Collections;
+    using WinUX.Messaging.Notifications.Buttons;
+    using WinUX.Messaging.Notifications.Inputs;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class CustomAction : INotificationAction
     {

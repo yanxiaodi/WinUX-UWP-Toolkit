@@ -1,11 +1,11 @@
-namespace Croft.Core.Messaging.Notifications.Content
+namespace WinUX.Messaging.Notifications.Content
 {
     using System;
     using System.Collections.Generic;
 
-    using Croft.Core.Collections;
-    using Croft.Core.Messaging.Notifications.Enums;
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Collections;
+    using WinUX.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class NotificationVisual
     {

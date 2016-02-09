@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Extensions
+namespace WinUX.Extensions
 {
     using System;
     using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace Croft.Core.Extensions
     using Windows.Storage;
     using Windows.Storage.FileProperties;
 
-    using Croft.Core.Storage;
+    using WinUX.Storage;
 
     /// <summary>
     /// A collection of StorageFile extensions.

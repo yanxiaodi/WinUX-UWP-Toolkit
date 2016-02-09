@@ -1,4 +1,4 @@
-﻿namespace Croft.Core.Diagnostics
+﻿namespace WinUX.Diagnostics
 {
     using System.Diagnostics.Tracing;
 

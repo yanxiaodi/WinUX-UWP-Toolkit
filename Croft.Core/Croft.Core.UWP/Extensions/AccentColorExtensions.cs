@@ -7,11 +7,11 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Extensions
+namespace WinUX.Extensions
 {
     using Windows.UI;
 
-    using Croft.Core.Enums;
+    using WinUX.Enums;
 
     /// <summary>
     /// A collection of AccentColor extensions.

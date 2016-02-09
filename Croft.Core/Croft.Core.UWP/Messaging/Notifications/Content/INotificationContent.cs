@@ -1,4 +1,4 @@
-﻿namespace Croft.Core.Messaging.Notifications.Content
+﻿namespace WinUX.Messaging.Notifications.Content
 {
     using Windows.Data.Xml.Dom;
 

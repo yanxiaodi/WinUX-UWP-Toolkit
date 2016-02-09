@@ -1,13 +1,13 @@
-﻿namespace Croft.Core.Xaml.Controls
+﻿namespace WinUX.Xaml.Controls
 {
     using System.Linq;
 
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
 
-    using Croft.Core.Exceptions;
-    using Croft.Core.Extensions;
-    using Croft.Core.Validation;
+    using WinUX.Exceptions;
+    using WinUX.Extensions;
+    using WinUX.Validation;
 
     public class ValidatingTextBox : TextBox
     {

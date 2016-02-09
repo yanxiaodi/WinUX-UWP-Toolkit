@@ -1,4 +1,4 @@
-namespace Croft.Core.Messaging.Notifications.Enums
+namespace WinUX.Messaging.Notifications.Enums
 {
     internal enum NotificationCommand
     {

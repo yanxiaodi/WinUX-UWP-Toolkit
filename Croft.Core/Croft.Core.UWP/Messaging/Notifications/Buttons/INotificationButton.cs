@@ -1,4 +1,4 @@
-namespace Croft.Core.Messaging.Notifications.Buttons
+namespace WinUX.Messaging.Notifications.Buttons
 {
     public interface INotificationButton
     {

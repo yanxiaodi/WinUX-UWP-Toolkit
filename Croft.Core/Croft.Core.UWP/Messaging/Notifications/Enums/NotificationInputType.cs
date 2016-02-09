@@ -1,6 +1,6 @@
-namespace Croft.Core.Messaging.Notifications.Enums
+namespace WinUX.Messaging.Notifications.Enums
 {
-    using Croft.Core.Attributes;
+    using WinUX.Attributes;
 
     internal enum NotificationInputType
     {

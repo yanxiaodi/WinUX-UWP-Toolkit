@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Croft.Core.Samples", "Croft.Core.Samples\Croft.Core.Samples.csproj", "{903A07DF-091F-4E1F-94B1-EEA60261057B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUX.Sample", "Croft.Core.Samples\WinUX.Sample.csproj", "{903A07DF-091F-4E1F-94B1-EEA60261057B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Croft.Core.UWP", "Croft.Core.UWP\Croft.Core.UWP.csproj", "{9EBF54FD-4EBF-4F49-96A6-69279A2D8DDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUX.UWP", "Croft.Core.UWP\WinUX.UWP.csproj", "{9EBF54FD-4EBF-4F49-96A6-69279A2D8DDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Croft.Core.Common", "Croft.Core.Common\Croft.Core.Common.csproj", "{E92F28CC-FA17-4794-AD4C-D4FCF0B27D16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUX.Common", "Croft.Core.Common\WinUX.Common.csproj", "{E92F28CC-FA17-4794-AD4C-D4FCF0B27D16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{70B75057-B250-478E-8952-9F55E8EB9732}"
 	ProjectSection(SolutionItems) = preProject

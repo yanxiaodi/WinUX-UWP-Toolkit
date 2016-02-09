@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Enums
+namespace WinUX.Enums
 {
     /// <summary>
     /// Available device types.

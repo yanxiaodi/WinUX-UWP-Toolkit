@@ -1,4 +1,4 @@
-namespace Croft.Core.Messaging.Notifications.Inputs
+namespace WinUX.Messaging.Notifications.Inputs
 {
     public interface INotificationInput
     {

@@ -1,7 +1,7 @@
-namespace Croft.Core.Messaging.Notifications.Actions
+namespace WinUX.Messaging.Notifications.Actions
 {
-    using Croft.Core.Messaging.Notifications.Enums;
-    using Croft.Core.Messaging.Notifications.XmlParts;
+    using WinUX.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.XmlParts;
 
     public sealed class SnoozeAndDismissAction : INotificationAction
     {

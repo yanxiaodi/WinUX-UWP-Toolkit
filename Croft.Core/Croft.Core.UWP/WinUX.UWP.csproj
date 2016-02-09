@@ -167,7 +167,7 @@
     <Compile Include="Validation\Rules\EmailValidationRule.cs" />
     <Compile Include="Validation\Rules\IntValidationRule.cs" />
     <Compile Include="Validation\Rules\UrlValidationRule.cs" />
-    <Compile Include="Validation\ValidationRule.cs" />
+    <Compile Include="Validation\Rules\Common\ValidationRule.cs" />
     <Compile Include="Validation\ValidationRules.cs" />
     <Compile Include="Xaml\Behaviors\FileThumbnailImageSourceBehavior.cs" />
     <Compile Include="Xaml\Behaviors\WinComposition\UIElementParallaxEffectBehavior.cs" />
@@ -193,11 +193,10 @@
     <Compile Include="Xaml\StateTriggers\NetworkConnectionTrigger.cs" />
     <Content Include="Properties\Croft.Core.UWP.rd.xml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Croft.Core.Common\Croft.Core.Common.csproj">
+    <ProjectReference Include="..\Croft.Core.Common\WinUX.Common.csproj">
       <Project>{e92f28cc-fa17-4794-ad4c-d4fcf0b27d16}</Project>
-      <Name>Croft.Core.Common</Name>
+      <Name>WinUX.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

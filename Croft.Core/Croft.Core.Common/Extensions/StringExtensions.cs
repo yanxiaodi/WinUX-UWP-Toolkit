@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Extensions
+namespace WinUX.Extensions
 {
     using System;
     using System.Text;

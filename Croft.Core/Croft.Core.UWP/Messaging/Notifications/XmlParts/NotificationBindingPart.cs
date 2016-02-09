@@ -1,11 +1,11 @@
-namespace Croft.Core.Messaging.Notifications.XmlParts
+namespace WinUX.Messaging.Notifications.XmlParts
 {
     using System;
     using System.Collections.Generic;
 
-    using Croft.Core.Messaging.Notifications;
-    using Croft.Core.Messaging.Notifications.Enums;
-    using Croft.Core.Messaging.Notifications.XmlParts.Interfaces;
+    using WinUX.Attributes.Xml;
+    using WinUX.Messaging.Notifications.Enums;
+    using WinUX.Messaging.Notifications.XmlParts.Interfaces;
 
     [XmlElement("binding")]
     internal sealed class NotificationBindingPart

@@ -1,4 +1,4 @@
-namespace Croft.Core.Messaging.Notifications.XmlParts.Interfaces
+namespace WinUX.Messaging.Notifications.XmlParts.Interfaces
 {
     internal interface INotificationBindingPart
     {

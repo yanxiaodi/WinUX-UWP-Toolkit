@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Croft.Core.Extensions
+namespace WinUX.Extensions
 {
     using System.Collections.Generic;
     using System.Linq;
