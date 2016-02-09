@@ -1,4 +1,8 @@
 # Croft.Core.UWP
+A toolkit containing a set of UWP controls, value converters, behaviors, visual state triggers, extensions and more!
+
+[![NuGet](https://img.shields.io/nuget/dt/Croft.Core.UWP.svg?style=flat-square)](https://www.nuget.org/packages/Croft.Core.UWP/)
+[![NuGet](https://img.shields.io/nuget/v/Croft.Core.UWP.svg?style=flat-square)](https://www.nuget.org/packages/Croft.Core.UWP/)
 
 ## About
 I have built a lot of Windows apps over the last few years which have required a similar set of XAML extensions and controls that I've copied, pasted and reused amongst them all. This project is going to become the core for all of those features so that not only myself, but you reading this, can save time and effort in adding this common, core functionality into your apps so you have the time to spend enhancing your experiences.
