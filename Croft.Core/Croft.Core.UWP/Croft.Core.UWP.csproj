@@ -7,8 +7,8 @@
     <ProjectGuid>{9EBF54FD-4EBF-4F49-96A6-69279A2D8DDF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Croft.Core</RootNamespace>
-    <AssemblyName>Croft.Core.UWP</AssemblyName>
+    <RootNamespace>WinUX</RootNamespace>
+    <AssemblyName>WinUX.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
