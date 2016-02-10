@@ -1,7 +1,6 @@
 # WinUX UWP Toolkit
 A toolkit containing a set of UWP controls, value converters, behaviors, visual state triggers, extensions and more!
 
-[![NuGet](https://img.shields.io/nuget/dt/WinUX.UWP.svg?style=flat-square)](https://www.nuget.org/packages/WinUX.UWP/)
 [![NuGet](https://img.shields.io/nuget/v/WinUX.UWP.svg?style=flat-square)](https://www.nuget.org/packages/WinUX.UWP/)
 
 ## About
